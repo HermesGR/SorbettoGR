@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.sorbetto" name="Sorbetto Repository" version="1.0.0" provider-name="Sorbetto">
+	<extension point="xbmc.addon.repository" name="Sorbetto Repository">
+		<dir>
+			<info compressed="false">https://hermesgr.github.io/SorbettoGR/addons.xml</info>
+			<checksum>https://hermesgr.github.io/SorbettoGR/addons.xml.md5</checksum>
+			<datadir zip="true">https://hermesgr.github.io/SorbettoGR/</datadir>
+			<hashes>false</hashes>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<path>repository.sorbetto-1.0.0.zip</path>
+		<assets>
+			<icon>repository.sorbetto-icon.png</icon>
+		</assets>
+		<summary lang="el_GR">Αποθετήριο του Sorbetto build: αυτόματες ενημερώσεις για το skin και τα πρόσθετά του.</summary>
+		<summary lang="en_GB">Sorbetto build repository: automatic updates for the skin and its add-ons.</summary>
+		<description lang="el_GR">Σε κάθε εκκίνηση του Kodi ελέγχεται για νέες εκδόσεις του Sorbetto skin και του βοηθού του, και εγκαθίστανται αυτόματα.</description>
+		<description lang="en_GB">On every Kodi start it checks for new versions of the Sorbetto skin and its helper, and installs them automatically.</description>
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+	</extension>
+</addon>
+
+<addon id="script.sorbetto.helper" name="Sorbetto Helper" version="1.3.2" provider-name="Sorbetto">
+	<requires>
+		<import addon="xbmc.python" version="3.0.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup"/>
+	<extension point="xbmc.addon.metadata">
+		<path>script.sorbetto.helper-1.3.2.zip</path>
+		<assets>
+			<icon>script.sorbetto.helper-icon.png</icon>
+		</assets>
+		<summary lang="el_GR">Βοηθός του Sorbetto build: φέρνει online το μενού και τα φόντα της αρχικής.</summary>
+		<summary lang="en_GB">Sorbetto build helper: loads the home menu online.</summary>
+		<description lang="el_GR">Σε κάθε εκκίνηση του Kodi κατεβάζει το μενού της αρχικής από τη σελίδα διαχείρισης και ζητά έλεγχο ενημερώσεων. Τρέχει μία φορά και κλείνει.</description>
+		<description lang="en_GB">On every Kodi start it downloads the home menu from the management page and asks for an update check. It runs once and exits.</description>
+		<platform>all</platform>
+		<license>GPL-2.0-only</license>
+	</extension>
+</addon>
+
+<addon id="skin.sorbetto" version="1.3.4" name="Sorbetto" provider-name="Sorbetto">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0"/>
+		<import addon="script.sorbetto.helper" version="1.3.1"/>
+		<import addon="resource.language.el_gr" version="9.0.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<path>skin.sorbetto-1.3.4.zip</path>
+		<assets>
+			<icon>skin.sorbetto-icon.png</icon>
+		</assets>
+		<platform>all</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<summary lang="el_GR">Sorbetto — απλό και γρήγορο skin για τηλεόραση, με μενού που ενημερώνεται online.</summary>
+		<summary lang="en_GB">Sorbetto — a simple TV skin with an online-updated menu.</summary>
+		<description lang="el_GR">Αρχική με πλευρικό μενού και σειρά με αφίσες. Το μενού αλλάζει από τη σελίδα διαχείρισης στο WordPress και φτάνει στον χρήστη στην επόμενη εκκίνηση. Βασισμένο στο Estuary του Kodi (phil65, Ichabod Fletchman).</description>
+		<description lang="en_GB">Home screen with a side menu and a poster row. The menu is managed online and reaches users on the next start. Based on Kodi Estuary (phil65, Ichabod Fletchman).</description>
+	</extension>
+</addon>
+</addons>
