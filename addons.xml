@@ -72,7 +72,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.sorbetto" version="1.3.16" name="Sorbetto" provider-name="Sorbetto">
+<addon id="skin.sorbetto" version="1.3.17" name="Sorbetto" provider-name="Sorbetto">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 		<import addon="script.sorbetto.helper" version="1.3.7"/>
@@ -89,7 +89,7 @@
 		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<path>skin.sorbetto-1.3.16.zip</path>
+		<path>skin.sorbetto-1.3.17.zip</path>
 		<assets>
 			<icon>skin.sorbetto-icon.png</icon>
 		</assets>
