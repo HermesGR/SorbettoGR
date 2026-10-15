@@ -29,7 +29,7 @@
 	</extension>
 </addon>
 
-<addon id="script.sorbetto.helper" name="Sorbetto Helper" version="1.3.9" provider-name="Sorbetto">
+<addon id="script.sorbetto.helper" name="Sorbetto Helper" version="1.3.12" provider-name="Sorbetto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1"/>
 		<import addon="service.subtitles.opensubtitles" version="5.0.0"/>
@@ -39,7 +39,7 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="startup"/>
 	<extension point="xbmc.addon.metadata">
-		<path>script.sorbetto.helper-1.3.9.zip</path>
+		<path>script.sorbetto.helper-1.3.12.zip</path>
 		<assets>
 			<icon>script.sorbetto.helper-icon.png</icon>
 		</assets>
@@ -52,7 +52,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.sorbetto" version="1.3.14" name="Sorbetto" provider-name="Sorbetto">
+<addon id="skin.sorbetto" version="1.3.15" name="Sorbetto" provider-name="Sorbetto">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 		<import addon="script.sorbetto.helper" version="1.3.7"/>
@@ -69,7 +69,7 @@
 		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<path>skin.sorbetto-1.3.14.zip</path>
+		<path>skin.sorbetto-1.3.15.zip</path>
 		<assets>
 			<icon>skin.sorbetto-icon.png</icon>
 		</assets>
