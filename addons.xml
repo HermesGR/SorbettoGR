@@ -49,18 +49,12 @@
 	</extension>
 </addon>
 
-<addon id="script.sorbetto.helper" name="Sorbetto Helper" version="1.3.29" provider-name="Sorbetto">
+<addon id="script.sorbetto.helper" name="Sorbetto Helper" version="1.3.30" provider-name="Sorbetto">
 	<requires>
 		<import addon="xbmc.python" version="3.0.1"/>
 		<import addon="service.subtitles.opensubtitles" version="5.0.0"/>
-		<!-- Retro Gaming: επίσημα πρόσθετα παιχνιδιών του Kodi -->
-		<import addon="game.libretro.2048" version="0.0.1"/>
-		<import addon="game.libretro.dinothawr" version="0.0.1"/>
-		<import addon="game.libretro.ecwolf" version="0.0.1"/>
-		<import addon="game.libretro.gong" version="0.0.1"/>
-		<import addon="game.libretro.mrboom" version="0.0.1"/>
-		<import addon="game.libretro.nx" version="0.0.1"/>
-		<import addon="game.libretro.prboom" version="0.0.1"/>
+		<!-- Sorbetto Games: μόνο το Rick Dangerous (επίσημο πρόσθετο του Kodi). Τα υπόλοιπα
+		     παιχνίδια είναι στο SorbettoGames, που εγκαθίσταται με το πρώτο κλικ. -->
 		<import addon="game.libretro.xrick" version="0.0.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
@@ -68,7 +62,7 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="startup"/>
 	<extension point="xbmc.addon.metadata">
-		<path>script.sorbetto.helper-1.3.29.zip</path>
+		<path>script.sorbetto.helper-1.3.30.zip</path>
 		<assets>
 			<icon>script.sorbetto.helper-icon.png</icon>
 		</assets>
