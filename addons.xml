@@ -62,15 +62,16 @@
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="startup"/>
 	<extension point="xbmc.addon.metadata">
+		<path>script.sorbetto.helper-1.3.33.zip</path>
+		<assets>
+			<icon>script.sorbetto.helper-icon.png</icon>
+		</assets>
 		<summary lang="el_GR">Βοηθός του Sorbetto build: φέρνει online το μενού και τα φόντα της αρχικής.</summary>
 		<summary lang="en_GB">Sorbetto build helper: loads the home menu online.</summary>
 		<description lang="el_GR">Σε κάθε εκκίνηση του Kodi κατεβάζει το μενού της αρχικής από τη σελίδα διαχείρισης και ζητά έλεγχο ενημερώσεων. Τρέχει μία φορά και κλείνει.</description>
 		<description lang="en_GB">On every Kodi start it downloads the home menu from the management page and asks for an update check. It runs once and exits.</description>
 		<platform>all</platform>
 		<license>GPL-2.0-only</license>
-		<assets>
-			<icon>resources/icon.png</icon>
-		</assets>
 	</extension>
 </addon>
 <addon id="repository.sorbetto.games" name="SorbettoGames Repository" version="1.0.1" provider-name="HermesGR">
